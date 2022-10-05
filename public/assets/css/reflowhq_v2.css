@@ -300,6 +300,7 @@
   }
 }
 .ref-quantity-widget {
+  width: calc(--ref-border-radius - 2em);
   display: inline-flex;
   border: 1px solid var(--ref-gray-300);
   border-radius: var(--ref-border-radius);
@@ -311,7 +312,7 @@
   background: none;
   border: none;
   outline: none;
-  width: 2.5em;
+  width: 5.2em;
   font-size: 0.9em;
   padding: 0.5em 0;
 }

@@ -744,7 +744,7 @@
           if (!this.inStock) return;
           let r = Math.max(1, parseInt(e.target.value, 10) || 1);
           if (
-            ((r = Math.min(r, 9999)),
+            ((r = Math.min(r, 999999999)),
             (e.target.value = r),
             r == this.getQuantity(r))
           )
@@ -790,9 +790,9 @@
             d(".ref-increase", this.node)[0].classList.add("inactive");
       }
       getMaxQuantity() {
-        return parseInt(this.node.dataset.reflowMaxQty, 10) || 9999;
+        return parseInt(this.node.dataset.reflowMaxQty, 10) || 999999;
       }
-      setMaxQuantity(e = 9999) {
+      setMaxQuantity(e = 999999) {
         this.node.dataset.reflowMaxQty = e;
       }
       getVariant() {
